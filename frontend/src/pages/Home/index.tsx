@@ -37,7 +37,8 @@ const Home = () => {
           authenticated: true,
           tokenData: getTokenData(),
         });
-        history.replace(from);
+        // history.replace(from);
+        history.push('/movies');
       })
       .catch((error) => {
         setHasError(true);
@@ -62,7 +63,7 @@ const Home = () => {
         <div className="home-content-container">
           <h1>LOGIN</h1>
           {hasError && (
-            <div className="alert alert-danger">
+            <div className="alert alert-danger error-message">
               Erro ao tentar efetuar o login
             </div>
           )}
