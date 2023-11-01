@@ -37,8 +37,8 @@ const Home = () => {
           authenticated: true,
           tokenData: getTokenData(),
         });
-        // history.replace(from);
-        history.push('/movies');
+        history.replace(from);
+        // history.push('/movies');
       })
       .catch((error) => {
         setHasError(true);
@@ -50,7 +50,7 @@ const Home = () => {
 
   const location = useLocation<LocationState>();
 
-  const { from } = location.state || { from: { pathname: '/' } };
+  const { from } = location.state || { from: { pathname: '/movies' } };
 
   return (
     <div className="home-container">

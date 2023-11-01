@@ -43,8 +43,8 @@ const Navbar = () => {
         </Link>
         <div className='nav-login-logout'>
           {authContextData.authenticated ? (
-              <button className='navbar-logout-button' type='button' onClick={handleLogoutClick}>
-                SAIR
+              <button className='navbar-logout-button bg-primary' type='button' onClick={handleLogoutClick}>
+                <h6>SAIR</h6>
               </button>
           ) : (
             <></>
