@@ -1,7 +1,7 @@
 import jwtDecode from 'jwt-decode';
 import { getAuthData } from './storage';
 
-export type Role = 'ROLE_OPERATOR' | 'ROLE_ADMIN';
+export type Role = 'ROLE_MEMBER' | 'ROLE_VISITOR';
 
 export type TokenData = {
   exp: number;
@@ -32,16 +32,6 @@ export const hasAnyRoles = (roles: Role[]): boolean => {
 
   const tokenData = getTokenData();
 
-  // forma basica para resolver
-  /* if (tokenData !== undefined) {
-      for (var i = 0; i < roles.length; i++) {
-        if(tokenData.authorities.includes(roles[i])) {
-          return true;
-        }
-      }
-    } */
-
-  // forma high order do javascript para resolver
   if (tokenData !== undefined) {
     return roles.some((roles) => tokenData.authorities.includes(roles));
   }

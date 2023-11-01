@@ -1,0 +1,20 @@
+.review-user {
+  font-size: 20px;
+  font-weight: 900;
+  color: #f2f2f2;
+  margin-top: 10px;
+}
+
+.review-text {
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  color: #f2f2f2;
+}
+
+@media (min-width: 576px) {
+    .review-user {
+        font-size: 25px;
+        margin-top: 15px;
+      }
+}

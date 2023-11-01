@@ -1,6 +1,6 @@
 .main-nav {
-    padding-left: 40px;
-    min-height: 70px;
+  padding-left: 40px;
+  min-height: 70px;
 }
 
 .nav-logo-text {
@@ -8,11 +8,13 @@
 }
 
 .nav-logo-text:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .nav-login-logout {
-    display: none;
+  display: unset;
+  color: #fff;
+  margin-right: 15px;
 }
 
 .navbar-logout-button {
@@ -27,16 +29,8 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-    .nav-login-logout {
-        display: unset;
-        color: #fff;
-        margin-right: 15px;
-    }
-}
-
-@media (min-width: 992px) {
-    .nav-login-logout {
-        margin-right: 40px;
-    }
+@media (min-width: 1200px) {
+  .nav-login-logout {
+    margin-right: 40px;
+  }
 }

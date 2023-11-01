@@ -3,17 +3,39 @@
 }
 
 .page-title {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .page-title h1 {
   color: #f2f2f2;
+  font-size: 18px;
 }
 
 .list {
-    padding: 40px;
+  padding: 40px;
 }
 
 .list a {
-    color: #f2f2f2;
+  color: #f2f2f2;
+  font-size: 15px;
+}
+
+@media (min-width: 576px) {
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+  .list a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title h1 {
+    font-size: 35px;
+  }
+
+  .list a {
+    font-size: 25px;
+  }
 }

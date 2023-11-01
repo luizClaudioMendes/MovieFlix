@@ -1,6 +1,5 @@
 import { AuthContext } from 'AuthContext';
 import { ReactComponent as MainImage } from 'assets/images/home-image.svg';
-import Button from 'components/Button';
 import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useLocation } from 'react-router-dom';
@@ -8,6 +7,7 @@ import { getTokenData } from 'util/auth';
 import history from 'util/history';
 import { requestBackendLogin } from 'util/requests';
 import { saveAuthData } from 'util/storage';
+import ButtonPersonalized from 'components/ButtonPersonalized';
 import './styles.css';
 
 type FormData = {
@@ -38,7 +38,6 @@ const Home = () => {
           tokenData: getTokenData(),
         });
         history.replace(from);
-        // history.push('/movies');
       })
       .catch((error) => {
         setHasError(true);
@@ -105,7 +104,7 @@ const Home = () => {
               </div>
             </div>
             <div className="login-submit">
-              <Button text="Fazer login" />
+              <ButtonPersonalized text="Fazer login" />
             </div>
           </form>
         </div>

@@ -1,0 +1,44 @@
+.review-card {
+  min-height: 120px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.review-input {
+  width: 230px;
+  height: 150px;
+}
+
+.review-button {
+  width: 100% !important;
+}
+
+@media (min-width: 576px) {
+  .review-input {
+    width: 460px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review-input {
+    width: 628px;
+    height: 60px;
+  }
+  .review-button {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-input {
+    width: 1050px;
+    height: 40px;
+  }
+
+  .review-button {
+    width: 40% !important;
+  }
+}

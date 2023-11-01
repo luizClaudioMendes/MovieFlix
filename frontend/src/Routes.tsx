@@ -2,6 +2,7 @@ import Navbar from 'components/Navbar';
 import PrivateRoute from 'components/PrivateRoute';
 import Home from 'pages/Home';
 import MovieCatalog from 'pages/private/MovieCatalog';
+import MovieDetail from 'pages/private/MovieDetails';
 import { Switch, Route, Router } from 'react-router-dom';
 import history from 'util/history';
 
@@ -17,8 +18,7 @@ const Routes = () => (
           <MovieCatalog />
         </Route>
         <Route path="/movies/:movieId">
-        <h1>movie detail</h1>
-        {/* <MovieDetails /> */}
+        <MovieDetail />
       </Route>
       </PrivateRoute>
       
